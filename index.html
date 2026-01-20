@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Loja de Contas Roblox</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #fff;
+    }
+    header {
+      padding: 20px;
+      text-align: center;
+      background: #020617;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: #020617;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,.5);
+    }
+    .price {
+      color: #22c55e;
+      font-size: 22px;
+      margin: 10px 0;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #22c55e;
+      color: #000;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+<header>Loja de Contas Roblox</header>
+
+<div class="container">
+  <div class="card">
+    <h2>Conta Starter</h2>
+    <p>Conta básica para iniciantes</p>
+    <div class="price">R$ 25,00</div>
+    <button onclick="comprar()">Comprar via Pix</button>
+  </div>
+
+  <div class="card">
+    <h2>Conta Premium</h2>
+    <p>Conta com itens e progresso</p>
+    <div class="price">R$ 80,00</div>
+    <button onclick="comprar()">Comprar via Pix</button>
+  </div>
+
+  <div class="card">
+    <h2>Conta Rara</h2>
+    <p>Itens raros e exclusivos</p>
+    <div class="price">R$ 150,00</div>
+    <button onclick="comprar()">Comprar via Pix</button>
+  </div>
+</div>
+
+<footer>
+  Pagamento via Pix • Entrega rápida<br>
+  © 2026 Loja Roblox
+</footer>
+
+<script>
+  function comprar() {
+    window.open("https://wa.me/5599999999999?text=Olá,%20quero%20comprar%20uma%20conta%20Roblox", "_blank");
+  }
+</script>
+
+</body>
+</html>
